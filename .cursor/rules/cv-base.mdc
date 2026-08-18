@@ -1,0 +1,34 @@
+---
+description: CV Harvard — fuente de verdad y flujo para adaptar por postulación
+alwaysApply: true
+---
+
+# CV base y adaptación por postulación
+
+## Fuente de verdad
+
+- La hoja de vida **base** (español, full stack) es siempre [`cv_fullstack.html`](cv_fullstack.html).
+- No inventes experiencia, fechas, empresas ni stacks: parte de ese archivo.
+- El portafolio canónico de carrera/proyectos está en `../my-portafolio/src/data/content.ts` (Papyria, Devitech, Populi, etc.). Úsalo para alinear hechos si hace falta, pero la CV a editar/derivar es `cv_fullstack.html`.
+
+## Cómo adaptar para una postulación
+
+1. **Leer** `cv_fullstack.html` completo (y el JD / brief de la empresa si el usuario lo pasa).
+2. **Copiar** la base a un archivo nuevo con el patrón existente:
+   - `cv_{rol}_{empresa}_{lang}.html`  
+   - Ejemplos: `cv_fullstack_epam_en.html`, `cv_frontend_tekton_en.html`, `cv_fullstack_coderland_es.html`
+3. **Adaptar solo la copia**: resumen, énfasis de bullets, orden/peso de skills y tono según el rol. No reescribir la historia laboral de cero.
+4. **No modificar** `cv_fullstack.html` salvo que el usuario pida actualizar la base (hechos reales nuevos: fechas, empresas, proyectos).
+5. Mantener el layout Harvard (Georgia, A4, flex header + `<ul>`, tech en `<strong>`).
+
+## Hechos fijos de la base (no contradecir)
+
+- **Devitech S.A.S – Terpel**: Noviembre 2021 – Actualidad; React, Next.js, RN, Electron, Node, Spring Boot, Go, PostgreSQL, PL/SQL, Kafka; Scrum → Scrum por objetivos.
+- **Papyria**: lector EPUB/PDF con IA; React Native, Spring Boot, Python/FastAPI, RAG. (No usar InkMind/Inmind.)
+- **Populi S.A.**: etiqueta **Independiente** (nunca “Freelance”); Premios Perrenque, Landing Haceb, ODR; entregas rápidas como fortaleza.
+- **Beefree / Begima / Kiiex**: se pueden dejar como Freelance en la base.
+
+## Frases del usuario que activan este flujo
+
+- “adapta la CV para X”, “versión para [empresa]”, “postulación a…”, “haz una variante en inglés/frontend/backend”
+- Acción esperada: copiar desde `cv_fullstack.html` → nuevo archivo → personalizar.

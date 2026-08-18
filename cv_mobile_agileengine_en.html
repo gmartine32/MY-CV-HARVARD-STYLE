@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gian Martinez - Software Engineer Offline Sync / RN (AgileEngine)</title>
+  <style>
+    @page { size: A4; margin: 1cm; }
+    body { width: 21cm; min-height: 29.7cm; margin: auto; padding: 1.5cm; font-family: 'Georgia', serif; font-size: 12pt; color: #000; background: #fff; }
+    h1, h2, h3 { margin: 0; font-weight: bold; }
+    h1 { font-size: 20pt; text-transform: uppercase; text-align:center; margin-bottom: 8px; }
+    h2 { font-size: 15pt; margin-top: 20px; border-bottom: 1px solid #000; padding-bottom: 4px; margin-bottom: 12px; }
+    h3 { font-size: 13pt; margin-top: 12px; }
+    p { margin: 5px 0; line-height: 1.5; }
+    ul { margin: 6px 0; padding-left: 20px; }
+    li { margin: 4px 0; line-height: 1.5; }
+    .contact-info { font-size: 10.5pt; margin-bottom: 18px; line-height: 1.4; }
+    .job-title { font-weight: normal; }
+    .location-date { font-style: italic; font-size: 10pt; }
+    .section { margin-top: 18px; }
+    .text-center { text-align: center; }
+    .underline { border-bottom: 1px solid #000; }
+    a { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <h1>Gian Franco Martinez Villa</h1>
+  <p class="contact-info text-center underline">
+    Colombia, Remote • 
+    <a href="https://linkedin.com/in/gianmartinezvilla" target="_blank">linkedin.com/in/gianmartinezvilla</a> • 
+    +57 314 704 6296 • 
+    <a href="mailto:gianfrancovillam@gmail.com">gianfrancovillam@gmail.com</a> • 
+    <a href="https://gianmartinez.lmcoding.dev" target="_blank">gianmartinez.lmcoding.dev</a>
+  </p>
+
+  <div class="section">
+    <p>
+      Software Engineer (4.5+ years) focused on <strong>React Native, TypeScript, and Node.js</strong> with production experience in <strong>offline-first synchronization</strong> beyond simple caching—local capture under intermittent connectivity, automatic sync, and reconciliation against relational backends (<strong>PostgreSQL</strong> / Oracle). Strong on distributed-data fundamentals: <strong>eventual consistency</strong>, <strong>idempotent</strong> messaging, ordering via <strong>Kafka</strong>, and high-volume transactional mobile ops (POS/field). Daily user of <strong>Claude / Cursor</strong>. Ready to deepen into CRDT frameworks (Automerge/Ditto-class) building on real offline sync ownership.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Professional Experience</h2>
+
+<!-- MoviSAI / CENSO - offline first lead for this role -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+  <div style="flex: 1; margin-right: 10px;">
+    <span style="font-weight: bold; font-size: 12pt;">MoviSAI – Gov. of San Andrés (CENSO SAI)</span><br>
+    <span class="job-title">Software Engineer – Mobile Offline Sync</span>
+  </div>
+  <div style="flex: 1; margin-left: 10px; text-align: right;">
+    <span style="font-weight: bold; font-size: 12pt;">Remote</span><br>
+    <span class="location-date">September 2024 – December 2024</span>
+  </div>
+</div>
+<ul>
+  <li>Built <strong>offline-first React Native / TypeScript</strong> census flows for <strong>30k+</strong> vehicles: local persistence, queueing writes without network, and <strong>automatic synchronization</strong> when connectivity returned.</li>
+  <li>Defined reconciliation between <strong>local device state</strong> and cloud/relational stores (<strong>Node.js</strong> + Oracle/SQL); handled retries, duplicate-safe sync, and consistent UI after merge.</li>
+  <li>Shipped Android/iOS to app stores; collaborated on edge-to-cloud data paths under real field conditions (intermittent connectivity).</li>
+</ul>
+
+<!-- Devitech POS -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+  <div style="flex: 1; margin-right: 10px;">
+    <span style="font-weight: bold; font-size: 12pt;">Devitech S.A.S – Terpel (POS / Ops Mobile)</span><br>
+    <span class="job-title">Software Engineer – React Native &amp; Distributed Data</span>
+  </div>
+  <div style="flex: 1; margin-left: 10px; text-align: right;">
+    <span style="font-weight: bold; font-size: 12pt;">Barranquilla, Colombia</span><br>
+    <span class="location-date">November 2021 – Present</span>
+  </div>
+</div>
+<ul>
+  <li>Own production <strong>React Native</strong> features for high-volume station operations (<strong>750+</strong> sites)—POS-adjacent inventory/sales/ops flows where correctness and latency matter (−30% mobile registration time).</li>
+  <li>Backend collaboration with <strong>Node.js</strong>, Spring Boot, progressive <strong>Go</strong>; model cloud data in <strong>PostgreSQL</strong> and apply event-driven messaging with <strong>Kafka</strong> (async workflows, ordering, at-least-once → idempotent consumers).</li>
+  <li>Participate in design discussions on consistency between clients and services; CI/CD, code reviews, and continuous refactor for maintainability.</li>
+</ul>
+
+<!-- Papyria sync -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+  <div style="flex: 1; margin-right: 10px;">
+    <span style="font-weight: bold; font-size: 12pt;">Papyria</span><br>
+    <span class="job-title">Founder &amp; Mobile / Sync Engineer</span>
+  </div>
+  <div style="flex: 1; margin-left: 10px; text-align: right;">
+    <span style="font-weight: bold; font-size: 12pt;">Personal Product</span><br>
+    <span class="location-date">January 2024 – Present</span>
+  </div>
+</div>
+<ul>
+  <li><strong>React Native</strong> reader with <strong>cloud sync</strong> of reading progress and preferences across sessions; local-first UX with server reconciliation via APIs (Spring Boot / Python).</li>
+  <li>Use <strong>Claude / Cursor</strong> daily to accelerate implementation and research on sync/architecture options—always validated before production.</li>
+</ul>
+
+<!-- Populi payments transactional -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+  <div style="flex: 1; margin-right: 10px;">
+    <span style="font-weight: bold; font-size: 12pt;">Populi S.A. – Independent</span><br>
+    <span class="job-title">Full Stack (Transactional Flows)</span>
+  </div>
+  <div style="flex: 1; margin-left: 10px; text-align: right;">
+    <span style="font-weight: bold; font-size: 12pt;">Remote</span><br>
+    <span class="location-date">2025 – Present</span>
+  </div>
+</div>
+<ul>
+  <li>Transactional product flows (enrollment, admin, <strong>payments</strong>) with <strong>PostgreSQL</strong> and TypeScript React/Next; care for state consistency and idempotent provider callbacks.</li>
+</ul>
+
+<!-- Earlier condensed -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+  <div style="flex: 1; margin-right: 10px;">
+    <span style="font-weight: bold; font-size: 12pt;">Earlier engagements (Begima, Kiiex, Beefree)</span><br>
+    <span class="job-title">React / Node</span>
+  </div>
+  <div style="flex: 1; margin-left: 10px; text-align: right;">
+    <span style="font-weight: bold; font-size: 12pt;">Remote</span><br>
+    <span class="location-date">2022 – 2023</span>
+  </div>
+</div>
+<ul>
+  <li>TypeScript React and Node services; foundation for modern frontend and API integration.</li>
+</ul>
+
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
+      <div style="flex: 1; margin-right: 10px;">
+        <span style="font-weight: bold; font-size: 12pt;">Universidad de la Costa CUC</span><br>
+        <span class="job-title">Systems Engineering</span>
+      </div>
+      <div style="flex: 1; margin-left: 10px; text-align: right;">
+        <span style="font-weight: bold; font-size: 12pt;">Barranquilla, Colombia</span><br>
+        <span class="location-date">March 2025</span>
+      </div>
+    </div>
+    <p>Honors: Academic excellence mention.</p>
+  </div>
+
+  <div class="section">
+    <h2>Additional Skills</h2>
+    <ul>
+      <li><strong>Role match:</strong> React Native, TypeScript, Node.js, offline-first sync &amp; reconciliation, PostgreSQL modeling, Kafka/event-driven messaging, idempotency &amp; eventual consistency fundamentals.</li>
+      <li><strong>Domain:</strong> high-volume transactional / POS-adjacent mobile (Terpel); field offline census (CENSO SAI).</li>
+      <li><strong>AI workflow:</strong> Claude / Cursor for productivity and technical research.</li>
+      <li><strong>Languages:</strong> Spanish (native), English (working professional; B1 → B2 in progress).</li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "my-cv-harvard-style",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf": "node scripts/html-to-pdf.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^24.15.0"
+  }
+}
