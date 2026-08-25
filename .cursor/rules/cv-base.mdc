@@ -10,6 +10,7 @@ alwaysApply: true
 - La hoja de vida **base** (español, full stack) es siempre [`cv_fullstack.html`](cv_fullstack.html).
 - No inventes experiencia, fechas, empresas ni stacks: parte de ese archivo.
 - El portafolio canónico de carrera/proyectos está en `../my-portafolio/src/data/content.ts` (Papyria, Devitech, Populi, etc.). Úsalo para alinear hechos si hace falta, pero la CV a editar/derivar es `cv_fullstack.html`.
+- URL pública del portafolio: `https://gianmartinez.space` (no usar `gianmartinez.lmcoding.dev`).
 
 ## Cómo adaptar para una postulación
 
@@ -23,7 +24,7 @@ alwaysApply: true
 
 ## Hechos fijos de la base (no contradecir)
 
-- **Devitech S.A.S – Terpel**: Noviembre 2021 – Actualidad; React, Next.js, RN, Electron, Node, Spring Boot, Go, PostgreSQL, PL/SQL, Kafka; Scrum → Scrum por objetivos.
+- **Devitech S.A.S – Terpel**: Noviembre 2021 – Actualidad; React, Next.js, RN (Redux Toolkit, React Navigation, Expo/EAS), Electron, Node, Spring Boot, Go, PostgreSQL, PL/SQL, Kafka, WebSockets, AWS Cognito; CI/CD Azure DevOps + GitHub Actions + Fastlane; Sentry, Maestro; Scrum → Scrum por objetivos.
 - **Papyria**: lector EPUB/PDF con IA; React Native, Spring Boot, Python/FastAPI, RAG. (No usar InkMind/Inmind.)
 - **Populi S.A.**: etiqueta **Independiente** (nunca “Freelance”); Premios Perrenque, Landing Haceb, ODR; entregas rápidas como fortaleza.
 - **Beefree / Begima / Kiiex**: se pueden dejar como Freelance en la base.
