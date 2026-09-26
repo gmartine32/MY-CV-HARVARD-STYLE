@@ -1,35 +1,60 @@
 ---
-description: CV Harvard — fuente de verdad y flujo para adaptar por postulación
+description: CV Harvard — fuente de verdad y flujo para adaptar por postulación (Reclutador Tech & IA)
 alwaysApply: true
 ---
 
 # CV base y adaptación por postulación
 
-## Fuente de verdad
+## Fuentes de verdad
 
-- La hoja de vida **base** (español, full stack) es siempre [`cv_fullstack.html`](cv_fullstack.html).
-- No inventes experiencia, fechas, empresas ni stacks: parte de ese archivo.
-- El portafolio canónico de carrera/proyectos está en `../my-portafolio/src/data/content.ts` (Papyria, Devitech, Populi, etc.). Úsalo para alinear hechos si hace falta, pero la CV a editar/derivar es `cv_fullstack.html`.
+- La hoja de vida **base en español** (full stack) es siempre [`cv_fullstack.html`](cv_fullstack.html).
+- La hoja de vida **base en inglés** (full stack) es siempre [`cv_fullstack_en.html`](cv_fullstack_en.html).
+- No inventes experiencia, fechas, empresas ni stacks: parte siempre de estos archivos base.
+- El portafolio canónico de carrera/proyectos está en `../my-portafolio/src/data/content.ts` (Papyria, Devitech, Populi, etc.).
 - URL pública del portafolio: `https://gianmartinez.space` (no usar `gianmartinez.lmcoding.dev`).
+
+## Regla de Oro de Experiencia & Fechas
+
+- **Devitech S.A.S – Terpel** es la **ÚNICA** empresa activa en estado "Presente / Actualidad" (`Noviembre 2021 – Actualidad` / `November 2021 – Present`). Demuestra estabilidad comprobada y liderazgo continuo en sistemas críticos.
+- **Ninguna otra empresa o proyecto debe tener fecha abierta ni figurar como "Actualidad / Present"**.
+  - **Papyria**: `Enero 2024 – Enero 2025` / `January 2024 – January 2025`. Etiqueta: **Proyecto Personal / Producto Independiente**. (Siempre usar **Papyria**, nunca "InkMind" ni "Inmind").
+  - **Populi S.A.**: `2024 – 2025`. Etiqueta: **Independiente / Contrato por Proyectos** (nunca usar "Freelance" para Populi; destacar entregas rápidas de plataformas completas: Premios Perrenque, Landing Haceb, ODR Logística).
+  - **Devitech – Proyecto puntual**: `Mayo 2025 – Junio 2025`. Etiqueta: **Consultoría / Proyecto puntual**.
+  - **Carnes Santa Cruz**: `Mayo 2024`. Etiqueta: **Independiente**.
+  - **MoviSAI**: `Septiembre 2024 – Diciembre 2024`. Etiqueta: **Proyecto Temporal**.
+  - **Begima / Beefree / Kiiex**: Se etiquetan como **Freelance** con sus respectivas fechas cerradas.
+
+## Ganchos de Reclutador Tech & IA (Tech Recruiter Hooks)
+
+Al adaptar o evaluar cualquier CV en este repositorio:
+1. **Identidad AI-Augmented Developer:** Posicionar siempre a Gian como un ingeniero de alto apalancamiento que domina el desarrollo asistido por IA (**Cursor, Claude Code, RAG, Spec-Driven Development, Prompt & Context Engineering**), acelerando la velocidad de entrega de producto hasta **2.5x** con rigor arquitectónico (SOLID, Clean Architecture, HITL review).
+2. **Métricas de Impacto Comprobables (Fórmula XYZ):** Preservar y destacar métricas cuantificables:
+   - Plataforma en más de **750 estaciones Terpel** a nivel nacional.
+   - **−40% tiempos de carga** mediante optimización de consultas SQL y arquitectura React.
+   - **−50% tiempos de ciclo de entrega** con automatización de pipelines CI/CD.
+   - **+20% tráfico orgánico** y **−35% tiempos de carga** en sitio corporativo.
+3. **Estructura de Skills ATS-Friendly:** Mantener siempre la categorización por áreas:
+   - *Desarrollo Potenciado con IA & Herramientas*
+   - *Frontend & Móvil*
+   - *Backend & Arquitectura*
+   - *Bases de Datos & Mensajería*
+   - *DevOps, Cloud & Calidad*
+   - *Metodologías & Idiomas* (Español Nativo, Inglés B2 Profesional)
 
 ## Cómo adaptar para una postulación
 
-1. **Leer** `cv_fullstack.html` completo (y el JD / brief de la empresa si el usuario lo pasa).
-2. **Copiar** la base a un archivo nuevo con el patrón existente:
+1. **Leer** la base correspondiente (`cv_fullstack.html` para ofertas en español, `cv_fullstack_en.html` para ofertas en inglés), junto con el JD (Job Description) de la vacante.
+2. **Copiar** la base a un archivo nuevo con la convención:
    - `cv_{rol}_{empresa}_{lang}.html`  
-   - Ejemplos: `cv_fullstack_epam_en.html`, `cv_frontend_tekton_en.html`, `cv_fullstack_coderland_es.html`
-3. **Adaptar solo la copia**: resumen, énfasis de bullets, orden/peso de skills y tono según el rol. No reescribir la historia laboral de cero.
-4. **No modificar** `cv_fullstack.html` salvo que el usuario pida actualizar la base (hechos reales nuevos: fechas, empresas, proyectos).
-5. Mantener el layout Harvard (Georgia, A4, flex header + `<ul>`, tech en `<strong>`).
-
-## Hechos fijos de la base (no contradecir)
-
-- **Devitech S.A.S – Terpel**: Noviembre 2021 – Actualidad; React, Next.js, RN (Redux Toolkit, React Navigation, Expo/EAS), Electron, Node, Spring Boot, Go, PostgreSQL, PL/SQL, Kafka, WebSockets, AWS Cognito; CI/CD Azure DevOps + GitHub Actions + Fastlane; Sentry, Maestro; Scrum → Scrum por objetivos.
-- **Papyria**: lector EPUB/PDF con IA; React Native, Spring Boot, Python/FastAPI, RAG. (No usar InkMind/Inmind.)
-- **Populi S.A.**: etiqueta **Independiente** (nunca “Freelance”); Premios Perrenque, Landing Haceb, ODR; entregas rápidas como fortaleza.
-- **Beefree / Begima / Kiiex**: se pueden dejar como Freelance en la base.
+   - Ejemplos: `cv_fullstack_epam_en.html`, `cv_frontend_tekton_en.html`, `cv_backend_wizeline_en.html`
+3. **Adaptar solo la copia**:
+   - Ajustar el titular y el resumen profesional para hacer match con las palabras clave prioritarias del JD.
+   - Reordenar y enfatizar los bullets más relevantes para el rol sin contradecir los hechos históricos ni las fechas.
+   - Priorizar en los skills las tecnologías exactas solicitadas por la vacante.
+4. **No modificar** los archivos base salvo que el usuario pida actualizar hechos reales de carrera.
+5. **Mantener el estándar Harvard Layout**: Fuente Georgia, formato A4, flex headers, fechas en cursiva alineadas a la derecha, negritas estratégicas en tecnologías y métricas.
 
 ## Frases del usuario que activan este flujo
 
-- “adapta la CV para X”, “versión para [empresa]”, “postulación a…”, “haz una variante en inglés/frontend/backend”
-- Acción esperada: copiar desde `cv_fullstack.html` → nuevo archivo → personalizar.
+- “adapta la CV para X”, “versión para [empresa]”, “postulación a…”, “haz una variante en inglés/frontend/backend/AI”
+- Acción esperada: copiar desde la base correspondiente → nuevo archivo → personalizar.
