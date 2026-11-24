@@ -37,14 +37,12 @@ function findSystemChrome() {
 }
 
 async function launchBrowser() {
-  try {
-    return await puppeteer.launch({ headless: true });
-  } catch (err) {
-    const executablePath = findSystemChrome();
-    if (!executablePath) throw err;
-    console.warn(`Bundled Chrome not found; using system browser: ${executablePath}`);
-    return puppeteer.launch({ headless: true, executablePath });
+  const executablePath = findSystemChrome();
+  const args = ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"];
+  if (executablePath) {
+    return puppeteer.launch({ headless: true, executablePath, args });
   }
+  return puppeteer.launch({ headless: true, args });
 }
 
 const browser = await launchBrowser();
@@ -61,4 +59,5 @@ try {
   console.log(`PDF written: ${outputPath}`);
 } finally {
   await browser.close();
+  process.exit(0);
 }

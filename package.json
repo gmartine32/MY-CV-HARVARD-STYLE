@@ -3,9 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "app": "node scripts/start-app.mjs",
+    "server": "node server/index.mjs",
+    "client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
     "pdf": "node scripts/html-to-pdf.mjs"
   },
   "dependencies": {
-    "puppeteer": "^24.15.0"
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "puppeteer": "^24.15.0",
+    "qrcode": "^1.5.4"
   }
 }
